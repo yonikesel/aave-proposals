@@ -195,5 +195,5 @@ create-risk-params-eth-20230529 :; forge script src/AaveV3EthRiskParams_20230529
 # ENS Onboarding on Ethereum V3
 
 test-ens-eth-payload :; forge test -vvv --match-contract AaveV3EthENSListing_20230517_Payload_Test
-deploy-ens-eth-payload :; forge script src/AaveV3EthENSListing_20230517/AaveV3EthENSListing_20230517_Payload.s.sol:DeployPayloadEthereum --rpc-url mainnet --broadcast --legacy --private-key ${PRIVATE_KEY} --verify -vvvv
-create-ens-eth-proposal :; forge script src/AaveV3EthENSListing_20230517/AaveV3EthENSListing_20230517_Payload.s.sol:CreateProposal --rpc-url mainnet --legacy --sender 0x25F2226B597E8F9514B3F68F00f494cF4f286491
+deploy-ens-eth-payload :; forge script src/AaveV3EthENSListing_20230517/DeployAaveV3EthENSListing_20230517_Payload.s.sol:DeployPayloadEthereum --rpc-url mainnet --broadcast --legacy --private-key ${PRIVATE_KEY} --verify -vvvv
+create-ens-eth-proposal :; forge script src/AaveV3EthENSListing_20230517/DeployAaveV3EthENSListing_20230517_Payload.s.sol:CreateProposal --rpc-url mainnet --legacy --sender 0x25F2226B597E8F9514B3F68F00f494cF4f286491
